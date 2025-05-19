@@ -1,7 +1,8 @@
 
+import { Contacts } from '@/types/portfolioTypes';
 import { Github, Linkedin, Mail } from 'lucide-react';
 
-const Footer = () => {
+const Footer = ({ contacts }: { contacts: Contacts }) => {
   return (
     <footer className="py-8 bg-background border-t border-border">
       <div className="max-w-5xl mx-auto px-6">
@@ -11,28 +12,28 @@ const Footer = () => {
               © {new Date().getFullYear()} Yohannes Tezera. All rights reserved.
             </p>
           </div>
-          
+
           <div className="flex space-x-4">
-            <a 
-              href="https://github.com/YohannesTz" 
-              target="_blank" 
+            <a
+              href={contacts.github}
+              target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
               <Github size={18} />
             </a>
-            <a 
-              href="https://www.linkedin.com/in/yohannes-tezera/" 
-              target="_blank" 
+            <a
+              href={contacts.linkedIn}
+              target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
               <Linkedin size={18} />
             </a>
-            <a 
-              href="mailto:yohannes@example.com" 
+            <a
+              href={`mailto:${contacts.email}`}
               aria-label="Email"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
@@ -40,6 +41,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
+
         <div className="mt-4 text-center text-xs text-muted-foreground">
           <p>Made with ❤️ and a lot of ☕</p>
         </div>

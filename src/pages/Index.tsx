@@ -46,7 +46,7 @@ const Index = () => {
         <BlogSection blogs={portfolioData.blogs_writing} />
         <ContactSection contacts={portfolioData.contacts} />
       </main>
-      <Footer />
+      <Footer contacts={portfolioData.contacts} />
     </div>
   );
 };
