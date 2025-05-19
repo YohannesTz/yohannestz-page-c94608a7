@@ -1,10 +1,6 @@
 
 import { ExternalLink } from 'lucide-react';
-
-interface BlogItem {
-  text: string;
-  link: string;
-}
+import { BlogItem } from '@/types/portfolioTypes';
 
 const BlogSection = ({ blogs }: { blogs: BlogItem[] }) => {
   return (
