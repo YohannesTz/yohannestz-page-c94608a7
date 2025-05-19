@@ -37,7 +37,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       <main>
-        <HeroSection topText={portfolioData.topText} />
+        <HeroSection topText={portfolioData.topText} contacts={portfolioData.contacts} />
         <ExperienceSection experience={portfolioData.experience} />
         <EducationSection educations={portfolioData.educations} />
         <ProjectsSection projects={portfolioData.projects} />
