@@ -1,12 +1,170 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import Navbar from "@/components/Navbar";
+import HeroSection from "@/components/HeroSection";
+import ExperienceSection from "@/components/ExperienceSection";
+import EducationSection from "@/components/EducationSection";
+import ProjectsSection from "@/components/ProjectsSection";
+import CertificationsSection from "@/components/CertificationsSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import BlogSection from "@/components/BlogSection";
+import ContactSection from "@/components/ContactSection";
+import Footer from "@/components/Footer";
 
 const Index = () => {
+  // Data for the portfolio
+  const portfolioData = {
+    topText: {
+      stacks: ["Android", "Web", "Backend"],
+      personalIntroOne: "Hi, Yohannes here, a programmer who constantly seeks innovative solutions to everyday problems. I've honed my analytical thinking and collaboration skills in those years, and I love working with a team. I love collaborating and making connections.",
+      personalIntroTwo: "I am always open to chatting about tech startups, and I would love for you to connect with me. Please feel free to message me if you want work done. Skills: Java, Android, React, Flutter, and Kotlin.",
+      personalSkills: "Java, Android, Flutter, and kotlin.",
+      openTo: "Open to: remote jobs",
+      resumeLink: "https://drive.google.com/file/d/1Pgw8j98V4mF4IMr7EfqbUJZUBn0QFUSJ/view?usp=drive_link"
+    },
+    educations: [
+      {
+        schoolName: "Microlink IT College",
+        time: "2021 - 2024",
+        type: "Bsc - Computer Science",
+        description: "• Coursework: Data Structures and Algorithms, Object-Oriented Programming, Database Systems Management, Web Development, Operating Systems, Computer Networks, Software Engineering, Artificial Intelligence, Cybersecurity, Mobile App Development"
+      },
+      {
+        schoolName: "Dejazmach Wondirad Preparatory School",
+        time: "2018 - 2020",
+        type: "Highschool Diploma - Natural Sciences",
+        description: "Learned the standard Ethiopian Highschool curriculum including related coursework."
+      }
+    ],
+    certifications: [
+      {
+        title: "Google African Developers Scholarship - Android Development",
+        issueDate: "Issued on May 2022",
+        description: "Learned Stuff...",
+        link: "https://adscerts.com/scholar/7FBBCC49E3BA672"
+      },
+      {
+        title: "Tech Camp Ethiopia - Full-stack web Development",
+        issueDate: "Issued on Jun 2021",
+        description: "Learned Stuff...",
+        link: "https://drive.google.com/file/d/1w9k9cI3vI62Y3qoHilAmP75g7sZZRC7B/view?usp=sharing"
+      },
+      {
+        title: "Udacity - Java Nano Degree",
+        issueDate: "Issued on Jun 2021",
+        description: "Learned stuff",
+        link: "https://confirm.udacity.com/GG9NUUKN"
+      }
+    ],
+    experience: [
+      {
+        title: "Android Developer",
+        company: "GebetaMaps",
+        time: "Jul 2024 - Present"
+      },
+      {
+        title: "Lead Android Developer",
+        company: "Alet Systems",
+        time: "May 2024 - Jul 2024"
+      },
+      {
+        title: "Junior Android Developer",
+        company: "Africa Technologies",
+        time: "Dec 2023 - May 2024"
+      },
+      {
+        title: "Junior Backend Developer",
+        company: "KurazTech",
+        time: "Nov 2023 - Dec 2023"
+      },
+      {
+        title: "Software Developer Intern",
+        company: "KurazTech",
+        time: "Aug 2023 - Nov 2023"
+      },
+      {
+        title: "Freelance Android Developer",
+        company: "Upwork",
+        time: "Sep 2022 - Oct 2022"
+      },
+      {
+        title: "Volunteer Fullstack web developer",
+        company: "ENADB - Ethiopian National Association of the Deafblind",
+        time: "Nov 2021 - 2022"
+      },
+      {
+        title: "Talent Pool member as Junior",
+        company: "GebebyaTalent",
+        time: "Sep 2021 - 2022"
+      }
+    ],
+    projects: [
+      {
+        name: "Okami",
+        link: "https://github.com/YohannesTz/Okami",
+        description: "An Android app that uses the kitsu api to let users explore anime and manga.",
+        mdName: "okami.md"
+      },
+      {
+        name: "Pikslate",
+        link: "https://github.com/YohannesTz/Pikslate",
+        description: "An Android app that uses the kitsu api to let users explore anime and manga.",
+        mdName: "pikslate.md"
+      },
+      {
+        name: "WorldHappinessScore",
+        link: "https://github.com/YohannesTz/WorldHappinessScore",
+        description: "A fairly simple app made with react and react-globe.gl which uses Three.js under to visualize worlds happiness and other related social data. based on the example provided by react-globe.gl.",
+        mdName: "worldHappiness.md"
+      },
+      {
+        name: "ChapaKt",
+        link: "https://github.com/YohannesTz/ChapaKt",
+        description: "Simple api wrapper and utilities for chapa payment gateway. I know this is a hacky or not a really good solution but that's all what we got now until chapa releases an official Android-Sdk or just a rest api for everybody to use.",
+        mdName: "chapaKt.md"
+      }
+    ],
+    blogs_writing: [
+      {
+        text: "I have put a few blogs on Medium.com, mostly focusing on Java, Kotlin, Android development, and other related stuff. If you are passionate about these topics or seeking valuable insights in the realm of programming and mobile app development, I invite you to explore my blog series. \n\nFeel free to check them out, leave comments, and share your thoughts. Your feedback is always helpful! ;)",
+        link: "https://medium.com/@yohannesTz"
+      }
+    ],
+    testimonials: [
+      {
+        name: "Akotet Y.",
+        title: "Research Intern at ISIL, KAIST",
+        content: "I have been lucky enough to have had the opportunity to work with Yohannes. He is passionate, skillful, and most of all fun to work with. Anyone who values being on top of projects and is looking for a highly competent full-stack/android developer will be glad to work with him.",
+        photoUrl: "https://yohannestz.netlify.app/images/ak_ysh.jpeg"
+      },
+      {
+        name: "Besufikad M.",
+        title: "Software Engineering student at ASTU",
+        content: "I had the pleasure of working with Yohannes, and I can confidently say that he is one of the best developers I have ever worked with. Yohannes is extremely diligent and disciplined in his work, which greatly boosts productivity for the entire team.",
+        photoUrl: "https://yohannestz.netlify.app/images/bes_m.png"
+      },
+      {
+        name: "Dawit Sh.",
+        title: "DevOps | Low Level Programming | Mainstream Applications | Full Stack.",
+        content: "I had the the honor of working with Yohannes, highly disciplined, versatile, and a problem-solving machine.. and has nose for Kotlin too.",
+        photoUrl: "https://yohannestz.netlify.app/images/dawit_sh.jpg"
+      }
+    ]
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <Navbar />
+      <main>
+        <HeroSection topText={portfolioData.topText} />
+        <ExperienceSection experience={portfolioData.experience} />
+        <EducationSection educations={portfolioData.educations} />
+        <ProjectsSection projects={portfolioData.projects} />
+        <CertificationsSection certifications={portfolioData.certifications} />
+        <TestimonialsSection testimonials={portfolioData.testimonials} />
+        <BlogSection blogs={portfolioData.blogs_writing} />
+        <ContactSection />
+      </main>
+      <Footer />
     </div>
   );
 };
