@@ -1,4 +1,9 @@
 
+export interface Contacts {
+  linkedIn: string,
+  email: string
+}
+
 export interface TopText {
   stacks: string[];
   personalIntroOne: string;
@@ -48,6 +53,7 @@ export interface TestimonialItem {
 }
 
 export interface PortfolioData {
+  contacts: Contacts;
   topText: TopText;
   educations: EducationItem[];
   certifications: CertificationItem[];

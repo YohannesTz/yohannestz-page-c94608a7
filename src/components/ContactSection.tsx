@@ -1,7 +1,10 @@
 
+import { Contacts } from '@/types/portfolioTypes';
 import { Mail, Github, Linkedin, ExternalLink } from 'lucide-react';
 
-const ContactSection = () => {
+const ContactSection = ({ contacts }: { contacts: Contacts }) => {
+  const { email, linkedIn } = contacts;
+
   return (
     <section id="contact" className="py-16 bg-secondary/50">
       <div className="section-container">
@@ -16,7 +19,7 @@ const ContactSection = () => {
           
           <div className="flex flex-col sm:flex-row gap-4">
             <a 
-              href="mailto:yohannes@example.com" 
+              href={`mailto:${email}`} 
               className="flex items-center justify-center gap-2 px-4 py-3 border border-primary/80 rounded-md text-center hover:bg-primary hover:text-primary-foreground transition-colors"
             >
               <Mail size={18} />
@@ -24,7 +27,7 @@ const ContactSection = () => {
             </a>
             
             <a 
-              href="https://www.linkedin.com/in/yohannes-tezera/" 
+              href={linkedIn} 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 px-4 py-3 bg-secondary hover:bg-secondary/80 rounded-md text-center transition-colors"
@@ -38,5 +41,6 @@ const ContactSection = () => {
     </section>
   );
 };
+
 
 export default ContactSection;

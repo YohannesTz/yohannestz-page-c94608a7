@@ -44,7 +44,7 @@ const Index = () => {
         <CertificationsSection certifications={portfolioData.certifications} />
         <TestimonialsSection testimonials={portfolioData.testimonials} />
         <BlogSection blogs={portfolioData.blogs_writing} />
-        <ContactSection />
+        <ContactSection contacts={portfolioData.contacts} />
       </main>
       <Footer />
     </div>

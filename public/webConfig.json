@@ -1,7 +1,14 @@
-
 {
+  "contact": {
+    "email": "yohannes222ethiopia@gmail.com",
+    "linkedIn": "https://www.linkedin.com/in/yohannestez/"
+  },
   "topText": {
-    "stacks": ["Android", "Web", "Backend"],
+    "stacks": [
+      "Android",
+      "Web",
+      "Backend"
+    ],
     "personalIntroOne": "Hi, Yohannes here, a programmer who constantly seeks innovative solutions to everyday problems. I've honed my analytical thinking and collaboration skills in those years, and I love working with a team. I love collaborating and making connections.",
     "personalIntroTwo": "I am always open to chatting about tech startups, and I would love for you to connect with me. Please feel free to message me if you want work done. Skills: Java, Android, React, Flutter, and Kotlin.",
     "personalSkills": "Java, Android, Flutter, and kotlin.",
