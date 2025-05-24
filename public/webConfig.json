@@ -112,9 +112,9 @@
       "mdName": "worldHappiness.md"
     },
     {
-      "name": "ChapaKt",
-      "link": "https://github.com/YohannesTz/ChapaKt",
-      "description": "Simple api wrapper and utilities for chapa payment gateway. I know this is a hacky or not a really good solution but that's all what we got now until chapa releases an official Android-Sdk or just a rest api for everybody to use.",
+      "name": "Satori",
+      "link": "https://github.com/YohannesTz/Satori",
+      "description": "Satori, an app to explore and discover books using the Google Books API. "Satori" means "enlightenment" in Japanese, and the app aims to bring knowledge and light through books.",
       "mdName": "chapaKt.md"
     }
   ],
