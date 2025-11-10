@@ -14,7 +14,7 @@
     "personalIntroTwo": "I am always open to chatting about tech startups, and I would love for you to connect with me. Please feel free to message me if you want work done. Skills: Java, Android, React, Flutter, and Kotlin.",
     "personalSkills": "Java, Android, Flutter, and kotlin.",
     "openTo": "Open to: remote jobs",
-    "resumeLink": "https://drive.google.com/file/d/15QCfsSYQuUusADIM3edxY_ejAVfp2Z2L/view?usp=drivesdk"
+    "resumeLink": "https://drive.google.com/file/d/1LFXI4oELZ05CxHVTSNYYv_8MlFsH3tCf/view?usp=sharing"
   },
   "educations": [
     {
@@ -34,27 +34,32 @@
     {
       "title": "Google African Developers Scholarship - Android Development",
       "issueDate": "Issued on May 2022",
-      "description": "Learned Stuff...",
+      "description": "Through the Google African Developers Scholarship (GADS), I completed a comprehensive Android Development track organized by Google, Andela, and Pluralsight. The program focused on building real-world Android apps using Kotlin, Jetpack, and Android Jetpack Compose, while following best practices in architecture, UI/UX design, and performance optimization.",
       "link": "https://adscerts.com/scholar/7FBBCC49E3BA672"
     },
     {
       "title": "Tech Camp Ethiopia - Full-stack web Development",
       "issueDate": "Issued on Jun 2021",
-      "description": "Learned Stuff...",
+      "description": "The Tech Camp Ethiopia program provided in-depth, practical training in full-stack web development, blending both frontend and backend technologies. I learned to build scalable, data-driven web applications from scratch, integrating responsive UI design with RESTful APIs and database management. The program emphasized teamwork, agile development, and real-world project execution.",
       "link": "https://drive.google.com/file/d/1w9k9cI3vI62Y3qoHilAmP75g7sZZRC7B/view?usp=sharing"
     },
     {
       "title": "Udacity - Java Nano Degree",
       "issueDate": "Issued on Jun 2021",
-      "description": "Learned stuff",
+      "description": "This Udacity Nanodegree program deepened my expertise in Java programming and object-oriented design. It provided a structured foundation in writing clean, efficient, and maintainable code for enterprise-level applications. I completed several projects involving real-world problem-solving, algorithm design, and modular software development.",
       "link": "https://confirm.udacity.com/GG9NUUKN"
     }
   ],
   "experience": [
     {
+      "title": "Mobile Engineer",
+      "company": "PlayStreamInteractive",
+      "time": "Sep 2025 - Present"
+    },
+    {
       "title": "Android Developer",
       "company": "GebetaMaps",
-      "time": "Jul 2024 - Present"
+      "time": "Jul 2024 - Sep 2025"
     },
     {
       "title": "Lead Android Developer",
