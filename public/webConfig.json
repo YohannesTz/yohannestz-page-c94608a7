@@ -53,8 +53,18 @@
   "experience": [
     {
       "title": "Mobile Engineer",
+      "company": "Technolab Interactive PLC",
+      "time": "Dec 2025 - Present"
+    },
+    {
+      "title": "Mobile Engineer",
       "company": "PlayStreamInteractive",
-      "time": "Sep 2025 - Present"
+      "time": "Sep 2025 - Dec 2025"
+    },
+    {
+      "title": "Opensource Android maintainer",
+      "company": "Synheart",
+      "time": "Nov 2025 - Dec 2025"
     },
     {
       "title": "Android Developer",
