@@ -3,7 +3,11 @@ import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link as ScrollLink } from 'react-scroll';
 
-const Navbar = () => {
+interface NavbarProps {
+  showProjectsSection: boolean;
+}
+
+const Navbar = ({ showProjectsSection }: NavbarProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   
@@ -27,7 +31,7 @@ const Navbar = () => {
     { name: "About", target: "about" },
     { name: "Experience", target: "experience" },
     { name: "Education", target: "education" },
-    { name: "Projects", target: "projects" },
+    ...(showProjectsSection ? [{ name: "Projects", target: "projects" }] : []),
     { name: "Contact", target: "contact" }
   ];
 

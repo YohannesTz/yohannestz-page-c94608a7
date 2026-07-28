@@ -53,6 +53,7 @@ export interface TestimonialItem {
 }
 
 export interface PortfolioData {
+  showProjectsSection: boolean;
   contacts: Contacts;
   topText: TopText;
   educations: EducationItem[];

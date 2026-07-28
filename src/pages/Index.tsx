@@ -35,12 +35,14 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
+      <Navbar showProjectsSection={portfolioData.showProjectsSection} />
       <main>
         <HeroSection topText={portfolioData.topText} contacts={portfolioData.contacts} />
         <ExperienceSection experience={portfolioData.experience} />
         <EducationSection educations={portfolioData.educations} />
-        <ProjectsSection projects={portfolioData.projects} />
+        {portfolioData.showProjectsSection && (
+          <ProjectsSection projects={portfolioData.projects} />
+        )}
         <CertificationsSection certifications={portfolioData.certifications} />
         <TestimonialsSection testimonials={portfolioData.testimonials} />
         <BlogSection blogs={portfolioData.blogs_writing} />
