@@ -44,7 +44,9 @@ const Index = () => {
           <ProjectsSection projects={portfolioData.projects} />
         )}
         <CertificationsSection certifications={portfolioData.certifications} />
-        <TestimonialsSection testimonials={portfolioData.testimonials} />
+        {portfolioData.showTestimonialsSection && (
+          <TestimonialsSection testimonials={portfolioData.testimonials} />
+        )}
         <BlogSection blogs={portfolioData.blogs_writing} />
         <ContactSection contacts={portfolioData.contacts} />
       </main>
